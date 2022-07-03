@@ -6,5 +6,11 @@
   * [Training Plan](getting-started/training-plan.md)
   * [Tools and Configuration](getting-started/tools.md)
   * [Troubleshooting](getting-started/troubleshooting.md)
+* [Docker](docker/README.md)
+  * [Docker Setup](docker/docker-setup.md)
+  * [Docker First Container](docker/first-container.md)
+  * [Docker Static Site](docker/static-site.md)
+  * [Docker First Image](docker/docker-first-image.md)
+  * [Docker Network Basics](docker/docker-network-basic.md)
 * [Refrences](refrences/refrences.md)
 
