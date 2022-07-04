@@ -12,5 +12,6 @@
   * [Docker Static Site](docker/static-site.md)
   * [Docker First Image](docker/docker-first-image.md)
   * [Docker Network Basics](docker/docker-network-basic.md)
+  * [Docker Storage](docker/docker-storage-volume.md)
 * [Refrences](refrences/refrences.md)
 
