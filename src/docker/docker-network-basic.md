@@ -144,7 +144,7 @@ docker network ls --no-trunc
 
 docker network inspect [NAME]
 
-Creating a network:
+Step 1: Creating a network:
 
 ```bash
 docker network create br00
@@ -154,7 +154,7 @@ docker network create br00
 
 docker network rm [NAME]
 
-Remove all unused networks:
+Step 1: Remove all unused networks:
 
 ```bash
 docker network prune
