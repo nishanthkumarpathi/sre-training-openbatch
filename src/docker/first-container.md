@@ -71,6 +71,18 @@ What you see above is a list of all containers that you ran. Notice that the `ST
 docker run -it alpine /bin/sh
 ```
 
+To view the dead container logs 
+
+```bash
+docker logs <container-id>
+```
+
+The below command will help you to become a root user.
+
+```bash
+sudo -i
+```
+
 ```bash
 cat /var/lib/docker/containers/<container id>/<container id>-json.log
 ```
