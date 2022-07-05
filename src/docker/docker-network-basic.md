@@ -107,30 +107,89 @@ docker network inspect bridge
 
 > **NOTE:** The syntax of the `docker network inspect` command is `docker network inspect <network>`, where `<network>` can be either network name or network ID. In the example above we are showing the configuration details for the network called "bridge". Do not confuse this with the "bridge" driver.
 
+### View Ubuntu Network Details
 
-# <a name="list_drivers"></a>Step 4: List network driver plugins
-
-The `docker info` command shows a lot of interesting information about a Docker installation.
-
-Run a `docker info` command on any of your Docker hosts and locate the list of network plugins.
-
-```
-docker info
-
-Containers: 0
- Running: 0
- Paused: 0
- Stopped: 0
-Images: 0
-Server Version: 1.12.3
-Storage Driver: aufs
-<Snip>
-Plugins:
- Volume: local
- Network: bridge host null overlay    <<<<<<<<
-Swarm: inactive
-Runtimes: runc
-<Snip>
+```bash
+ifconfig
 ```
 
-The output above shows the **bridge**, **host**, **null**, and **overlay** drivers.
+### List all Docker network commands:
+
+```bash
+docker network -h
+```
+
+### Command Summary: 
+
+* connect - Connect a container to a network 
+* create - Create a network 
+* disconnect - Disconnect a container from a network 
+* inspect - Display detailed information on one or more networks 
+* ls - List networks 
+* prune - Remove all unused networks 
+* rm - Remove one or more networks
+
+
+### List all Docker networks on the host:
+
+```bash
+docker network ls
+```
+
+```bash
+docker network ls --no-trunc
+```
+
+### Getting detailed info on a network:
+
+docker network inspect [NAME]
+
+Creating a network:
+
+```bash
+docker network create br00
+```
+
+### Deleting a network:
+
+docker network rm [NAME]
+
+Remove all unused networks:
+
+```bash
+docker network prune
+```
+
+### Adding and Removing containers to a network
+
+Step 1: Create a container with no network:
+
+```bash
+docker container run -d --name network-test03 -p 8081:80 nginx
+```
+
+Step 2: Create a new network:
+
+```bash
+docker network create br01
+```
+
+Step 3: Add the container to the bridge network:
+
+```bash
+docker network connect br01 network-test03
+```
+
+
+Step 4: Inspect network-test03 to see the networks:
+
+```bash
+docker container inspect network-test03
+```
+
+
+Step 5: Remove network-test03 from br01:
+
+```bash
+docker network disconnect br01 network-test03
+```
