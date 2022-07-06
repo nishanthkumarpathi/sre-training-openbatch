@@ -47,6 +47,7 @@ docker container run -d \
  -v html-volume:/usr/share/nginx/html/ \
  nginx
 ```
+
 Step 6: Edit index.html:
 
 ```bash

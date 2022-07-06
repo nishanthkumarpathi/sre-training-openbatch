@@ -5,14 +5,14 @@ Volumes are the preferred method of maintaining persistent data in Docker. In th
 Step 1: List all Docker volume commands:
 
 ```bash
-docker volume -h
+docker volume --help
 ```
 
-create: Create a volume.
-inspect: Display detailed information on one or more volumes.
-ls: List volumes.
-prune: Remove all unused local volumes.
-rm: Remove one or more volumes.
+* create: Create a volume.
+* inspect: Display detailed information on one or more volumes.
+* ls: List volumes.
+* prune: Remove all unused local volumes.
+* rm: Remove one or more volumes.
 
 Step 2: List all volumes on a host:
 
@@ -45,7 +45,7 @@ docker volume inspect test-volume1
 Step 6: Deleting a volume:
 
 ```bash
-docker volume rm test-volume
+docker volume rm test-volume1
 ```
 
 Removing all unused volumes:

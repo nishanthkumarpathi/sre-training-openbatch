@@ -95,11 +95,6 @@ Get the IP info for the container:
 docker container inspect network-test02 | grep IPAddr
 ```
 
-Inspect network-test03 to see that br01 was removed:
-
-```bash
-docker container inspect network-test04
-```
 
 ## Networking two containers
 
