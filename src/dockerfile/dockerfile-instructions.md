@@ -26,14 +26,6 @@ sudo apt install git -y
 ```
 
 ```bash
-mkdir docker_images
-```
-
-```bash
-cd docker_images
-```
-
-```bash
 mkdir weather-app
 ```
 
