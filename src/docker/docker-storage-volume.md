@@ -6,10 +6,10 @@ In this lesson, we will take a deeper look into using volumes with our Docker co
 
 Volumes are easier to back up or migrate than bind mounts. You can manage volumes using Docker CLI commands or the Docker API. They work on both Linux and Windows containers. Volumes can be more safely shared among multiple containers. Volume drivers allow for:
 
-* Storing volumes on remote hosts or cloud providers
-* Encrypting the contents of volumes
-* Add other functionality
-* New volumes can have their content pre-populated by a container.
+- Storing volumes on remote hosts or cloud providers
+- Encrypting the contents of volumes
+- Add other functionality
+- New volumes can have their content pre-populated by a container.
 
 Step 1: Create a new volume for an Nginx container:
 
@@ -25,6 +25,7 @@ docker container run -d \
  --mount type=volume,source=html-volume,target=/usr/share/nginx/html/ \
  nginx
 ```
+
 
 Step 3: Inspect the volume:
 
@@ -47,7 +48,7 @@ docker container run -d \
  nginx
 ```
 
-Step 6: Edit index.html ( From outside the Container )
+Step 6: Edit index.html:
 
 ```bash
 sudo vi /var/lib/docker/volumes/html-volume/_data/index.html
@@ -59,7 +60,7 @@ Step 7: Inspect nginx-volume2 to get the private IP:
 docker container inspect nginx-volume2
 ```
 
-Step 8: Login into nginx-volume1 and go to the html directory&#x20;
+Step 8: Login into nginx-volume1 and go to the html directory:
 
 ```bash
 docker container exec -it nginx-volume1 /bin/bash
@@ -72,8 +73,7 @@ cd /usr/share/nginx/html
 ```bash
 cat index.hml
 ```
-
-Install Vim ( inside the container, if you dont have any editor )
+Install Vim:
 
 ```bash
 apt-get update -y
@@ -105,13 +105,11 @@ cd /usr/share/nginx/html
 ```bash
 cat index.hml
 ```
-
 Install Vim:
 
 ```bash
 apt-get update -y
 ```
-
 ```bash
 apt-get install vim -y
 ```
