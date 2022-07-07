@@ -21,6 +21,7 @@
   * [Dockerfile Order of Execution](dockerfile/dockerfile-order-of-execution.md)
   * [Dockerfile Volume](dockerfile/dockerfile-volume.md)
   * [Entrypoint Command](dockerfile/entrypoint-command.md)
+  * [Multiple Stage Build](dockerfile/multiple-stage-build.md)
 * [Container Management](docker-container-management/README.md)
   * [Containers Start Automatically](docker-container-management/start-automatically.md)
 * [Docker Security](docker-security/README.md)
