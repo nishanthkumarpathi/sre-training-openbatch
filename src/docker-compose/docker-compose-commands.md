@@ -53,7 +53,7 @@ cd compose/commands
 Step 2: Create a docker-compose file:
 
 ```bash
-vi docker-compose.yml
+touch docker-compose.yml
 ```
 
 docker-compose.yml contents:
