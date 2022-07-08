@@ -3,13 +3,13 @@
 Step 1: To download and install Compose standalone, run:
 
 ```bash
-sudo curl -SL https://github.com/docker/compose/releases/download/v2.6.1/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+curl -SL https://github.com/docker/compose/releases/download/v2.6.1/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
 ```
 
 Step 2: Apply executable permissions to the standalone binary in the target path for the installation.
 
 ```bash
-sudo chmod +x /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
 ```
 
 Step 3: Test and execute compose commands using docker-compose.
@@ -18,4 +18,5 @@ Step 3: Test and execute compose commands using docker-compose.
 docker-compose --version
 ```
 
-\[]: # Language: markdown \[]: # Path: src\docker-compose\docker-compose-usage.md
+[]: # Language: markdown
+[]: # Path: src\docker-compose\docker-compose-usage.md
