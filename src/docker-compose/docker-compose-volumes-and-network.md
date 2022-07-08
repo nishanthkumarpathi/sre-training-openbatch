@@ -4,12 +4,23 @@ In this lesson, we will learn how to use volumes and networks in a docker compos
 
 Step 1: Setup your environment:
 
-mkdir -p compose/ghost
-cd compose/ghost
+```
+cd ~/compose
+```
+
+```
+mkdir -p ghost
+```
+
+```
+cd ghost
+```
 
 Step 2: Create a docker-compose.yml file:
 
-vi docker-compose.yml
+```
+touch docker-compose.yml
+```
 
 docker-compose.yml:
 
@@ -54,13 +65,11 @@ networks:
   mysql_network:
 ```
 
-
 Step 2: Create the compose container:
 
 ```bash
 docker-compose up -d
 ```
-
 
 Step 4: List compose services:
 
