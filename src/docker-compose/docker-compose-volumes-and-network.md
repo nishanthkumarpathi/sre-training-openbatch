@@ -80,7 +80,7 @@ docker-compose ps
 Step 5: List the volumes:
 
 ```bash
-docker volumes ls
+docker volume ls
 ```
 
 Step 6: List the volumes:
