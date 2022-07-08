@@ -1,44 +1,35 @@
 # Docker Compose Commands
 
-## Docker Compose Commands
-
 In this lesson, we will start using compose by creating a compose file. Then we will create and manage the services by using the most commonly used commands:
 
-build: Build or rebuild services&#x20;
-
-bundle: Generate a Docker bundle from the Compose file&#x20;
-
-config: Validate and view the Compose file '
-
-create: Create services&#x20;
-
-down: Stop and remove containers, networks, images, and volumes events: Receive real time events from containers&#x20;
-
-exec: Execute a command in a running container&#x20;
-
-help: Get help on a command&#x20;
-
-images: List images&#x20;
-
-kill: Kill containers logs: View output from containers&#x20;
-
-pause: Pause services port: Print the public port for a port binding ps: List containers pull: Pull service images push: Push service images&#x20;
-
-restart: Restart services rm: Remove stopped containers run: Run a one-off command scale: Set number of containers for a service&#x20;
-
-start: Start services&#x20;
-
+build: Build or rebuild services
+bundle: Generate a Docker bundle from the Compose file
+config: Validate and view the Compose file
+create: Create services
+down: Stop and remove containers, networks, images, and volumes
+events: Receive real time events from containers
+exec: Execute a command in a running container
+help: Get help on a command
+images: List images
+kill: Kill containers
+logs: View output from containers
+pause: Pause services
+port: Print the public port for a port binding
+ps: List containers
+pull: Pull service images
+push: Push service images
+restart: Restart services
+rm: Remove stopped containers
+run: Run a one-off command
+scale: Set number of containers for a service
+start: Start services
 stop: Stop services
-
-&#x20;top: Display the running processes&#x20;
-
-unpause: Unpause services&#x20;
-
-up: Create and start containers&#x20;
-
+top: Display the running processes
+unpause: Unpause services
+up: Create and start containers
 version: Show the Docker-Compose version information
 
-## Instructions
+# Instructions
 
 Step 1: Setup your environment:
 
@@ -53,7 +44,7 @@ cd compose/commands
 Step 2: Create a docker-compose file:
 
 ```bash
-touch docker-compose.yml
+vi docker-compose.yml
 ```
 
 docker-compose.yml contents:
@@ -94,6 +85,7 @@ docker-compose stop
 ```
 
 Step 7: Starting a compose service:
+
 
 ```bash
 docker-compose start
