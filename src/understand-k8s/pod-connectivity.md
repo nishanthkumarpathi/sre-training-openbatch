@@ -43,11 +43,11 @@ apiVersion: v1
 kind: Pod
 metadata:
   labels:
-    run: myapp
-  name: myapp-pod
+    run: webapp
+  name: webapp-pod
 spec:
   containers:
   - image: nginx
-    name: myapp-container
-  restartPolicy: Al
+    name: webapp-container
+  restartPolicy: Always
 ```
