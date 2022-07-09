@@ -20,4 +20,9 @@ Lets now take a look to create a nginx pod using **`kubectl`**.
 
 
 * Run the command **`kubectl describe pod <<podname>>`**look under the containers section.
-*
+
+Create a pod definition YAML file and use it to create a POD or use the command **`kubectl run myapp-pod --image=nginx`**.
+
+```
+kubectl run myapp-pod --image=nginx --dry-run=client -o yaml > myapp-pod.yaml
+```
