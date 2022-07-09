@@ -35,7 +35,7 @@
   * [K8s Installation](k8s-setup/k8s-setup.md)
   * [K8s Walkthrough](k8s-setup/k8s-walkthrough.md)
 * [Understand K8s](understand-k8s/README.md)
-  * [Pod Connectivity](understand-k8s/pod-connectivity.md)
+  * [Pod Connectivity](understand-k8s/pod.md)
   * [Deployments](understand-k8s/deployments.md)
   * [Service Cluster IP](understand-k8s/service-clusterip.md)
   * [Service NodePort](understand-k8s/service-nodeport.md)
