@@ -17,3 +17,7 @@ Lets now take a look to create a nginx pod using **`kubectl`**.
     ```
     kubectl get pods
     ```
+
+
+* Run the command **`kubectl describe pod <<podname>>`**look under the containers section.
+*
