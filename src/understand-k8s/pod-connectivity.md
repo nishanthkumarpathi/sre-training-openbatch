@@ -26,7 +26,7 @@ kubectl describe pod webapp
 kubectl delete pod webapp
 ```
 
-Step 4: Create a pod definition YAML file and use it to create a POD or use the command **`kubectl run myapp-pod --image=nginx`**.
+Step 4: Create a pod definition YAML file and use it to create a POD or use the command **`kubectl run webapp-pod --image=nginx`**.
 
 ```
 kubectl run webapp-pod --image=nginx --dry-run=client -o yaml > webapp-pod.yaml
