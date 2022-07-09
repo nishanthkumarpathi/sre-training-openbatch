@@ -27,7 +27,7 @@ sudo mv kubectl /usr/bin/
 Test to ensure the version you installed is up-to-date:
 
 ```bash
-kubectl version --short
+kubectl version
 ```
 
 ### Install Kubernetes using Minikube
