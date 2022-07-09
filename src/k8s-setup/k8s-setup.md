@@ -27,7 +27,7 @@ sudo mv kubectl /usr/bin/
 Test to ensure the version you installed is up-to-date:
 
 ```bash
-kubectl version
+kubectl version --client
 ```
 
 ### Install Kubernetes using Minikube
@@ -52,7 +52,7 @@ We are using Flannel Plugin for Networking, NetworkPolicy Management, Traffic Ma
 minikube start --network-plugin=cni --cni=flannel
 ```
 
-***
+****
 
 Use `ctrl+c` to break out of watch.
 
@@ -62,6 +62,24 @@ Congratulations you now have a minikube cluster equipped with Flannel
 
 ```bash
 minikube addons enable metrics-server
+```
+
+## `Download required Images` **to Master Node**
+
+{% hint style="info" %}
+Ensure you do `docker login` in the Master Node and Worker nodes before you download any images.
+{% endhint %}
+
+```
+curl -o downloadimages.sh https://gist.githubusercontent.com/nishanthkumarpathi/0f401f0eb24a48db5bdb774acdf512c6/raw/0b6cb0b8ed8be5c4b403ae6de4fd71f4f14be7bf/downloadimages.sh
+```
+
+```
+chmod +x downloadimages.sh
+```
+
+```
+./downloadimages.sh
 ```
 
 {% hint style="danger" %}
@@ -77,7 +95,7 @@ minikube node add --worker=true
 ```
 
 {% hint style="info" %}
-Now login to the Worker node and then pull all the latest images that are required.
+Now login to the Worker node and then pull all the latest images that are required.&#x20;
 
 You can use the same script that is used in the Master Server from the above section.
 {% endhint %}
