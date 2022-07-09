@@ -27,7 +27,7 @@ sudo mv kubectl /usr/bin/
 Test to ensure the version you installed is up-to-date:
 
 ```bash
-kubectl version --client
+kubectl version --short
 ```
 
 ### Install Kubernetes using Minikube
@@ -52,7 +52,7 @@ We are using Flannel Plugin for Networking, NetworkPolicy Management, Traffic Ma
 minikube start --network-plugin=cni --cni=flannel
 ```
 
-****
+***
 
 Use `ctrl+c` to break out of watch.
 
@@ -95,7 +95,7 @@ minikube node add --worker=true
 ```
 
 {% hint style="info" %}
-Now login to the Worker node and then pull all the latest images that are required.&#x20;
+Now login to the Worker node and then pull all the latest images that are required.
 
 You can use the same script that is used in the Master Server from the above section.
 {% endhint %}
