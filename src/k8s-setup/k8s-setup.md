@@ -64,24 +64,6 @@ Congratulations you now have a minikube cluster equipped with Flannel
 minikube addons enable metrics-server
 ```
 
-## `Download required Images` **to Master Node**
-
-{% hint style="info" %}
-Ensure you do `docker login` in the Master Node and Worker nodes before you download any images.
-{% endhint %}
-
-```
-curl -o downloadimages.sh https://gist.githubusercontent.com/nishanthkumarpathi/0f401f0eb24a48db5bdb774acdf512c6/raw/0b6cb0b8ed8be5c4b403ae6de4fd71f4f14be7bf/downloadimages.sh
-```
-
-```
-chmod +x downloadimages.sh
-```
-
-```
-./downloadimages.sh
-```
-
 {% hint style="danger" %}
 **Ensure your Master Node is in Healthy State and all the necessary services and pods are working fine.**
 {% endhint %}
