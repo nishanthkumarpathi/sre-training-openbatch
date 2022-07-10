@@ -72,14 +72,14 @@ Start your minikube cluster with one master node using the following command.
 We are using Flannel Plugin for Networking, NetworkPolicy Management, Traffic Management
 
 ```bash
-minikube start --network-plugin=cni --cni=flannel
+minikube start
 ```
 
-***
+```
+minikube status
+```
 
-Use `ctrl+c` to break out of watch.
-
-Congratulations you now have a minikube cluster equipped with Flannel
+Congratulations you now have a minikube cluster.
 
 ### Enable Metrics Server
 
@@ -112,5 +112,21 @@ kubectl get nodes
 ```
 
 Repeat the above steps, if you want to add more worker Nodes.
+
+### Kubectl context and configuration <a href="#kubectl-context-and-configuration" id="kubectl-context-and-configuration"></a>
+
+Show Merged kubeconfig settings.
+
+```
+kubectl config view
+```
+
+Display list of contexts
+
+```
+kubectl config get-contexts
+```
+
+
 
 ##
