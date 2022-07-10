@@ -27,7 +27,30 @@ sudo mv kubectl /usr/bin/
 Test to ensure the version you installed is up-to-date:
 
 ```bash
-kubectl version --client
+kubectl version
+```
+
+### Kubectl autocomplete <a href="#kubectl-autocomplete" id="kubectl-autocomplete"></a>
+
+#### BASH <a href="#bash" id="bash"></a>
+
+```bash
+source <(kubectl completion bash) # setup autocomplete in bash into the current shell, bash-completion package should be installed first.
+echo "source <(kubectl completion bash)" >> ~/.bashrc # add autocomplete permanently to your bash shell.
+```
+
+You can also use a shorthand alias for `kubectl` that also works with completion:
+
+```bash
+alias k=kubectl
+complete -o default -F __start_kubectl k
+```
+
+#### ZSH <a href="#zsh" id="zsh"></a>
+
+```bash
+source <(kubectl completion zsh)  # setup autocomplete in zsh into the current shell
+echo '[[ $commands[kubectl] ]] && source <(kubectl completion zsh)' >> ~/.zshrc # add autocomplete permanently to your zsh shell
 ```
 
 ### Install Kubernetes using Minikube
@@ -52,7 +75,7 @@ We are using Flannel Plugin for Networking, NetworkPolicy Management, Traffic Ma
 minikube start --network-plugin=cni --cni=flannel
 ```
 
-****
+***
 
 Use `ctrl+c` to break out of watch.
 
@@ -62,24 +85,6 @@ Congratulations you now have a minikube cluster equipped with Flannel
 
 ```bash
 minikube addons enable metrics-server
-```
-
-## `Download required Images` **to Master Node**
-
-{% hint style="info" %}
-Ensure you do `docker login` in the Master Node and Worker nodes before you download any images.
-{% endhint %}
-
-```
-curl -o downloadimages.sh https://gist.githubusercontent.com/nishanthkumarpathi/0f401f0eb24a48db5bdb774acdf512c6/raw/0b6cb0b8ed8be5c4b403ae6de4fd71f4f14be7bf/downloadimages.sh
-```
-
-```
-chmod +x downloadimages.sh
-```
-
-```
-./downloadimages.sh
 ```
 
 {% hint style="danger" %}
@@ -95,7 +100,7 @@ minikube node add --worker=true
 ```
 
 {% hint style="info" %}
-Now login to the Worker node and then pull all the latest images that are required.&#x20;
+Now login to the Worker node and then pull all the latest images that are required.
 
 You can use the same script that is used in the Master Server from the above section.
 {% endhint %}
