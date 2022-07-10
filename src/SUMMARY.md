@@ -34,7 +34,7 @@
 * [K8s Cluster Setup](k8s-setup/README.md)
   * [K8s Installation](k8s-setup/k8s-setup.md)
   * [K8s Walkthrough](k8s-setup/k8s-walkthrough.md)
-  * [K8s Tips](k8s-setup/k8s-tips.md)
+  * [K8s Cheat Sheet](k8s-setup/k8s-cheat-sheet.md)
 * [Understand K8s](understand-k8s/README.md)
   * [Pod Connectivity](understand-k8s/pod.md)
   * [Deployments](understand-k8s/deployments.md)
