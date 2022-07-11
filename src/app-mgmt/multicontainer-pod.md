@@ -14,7 +14,7 @@ spec:
   - name: simple-webapp
     image: simple-webapp
     ports:
-    - ContainerPort: 8080
+    - containerPort: 8080
   - name: log-agent
     image: log-agent
 ```
