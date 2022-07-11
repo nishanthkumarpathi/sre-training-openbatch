@@ -45,6 +45,8 @@
   * [Service LoadBalancer](understand-k8s/service-lb.md)
   * [Configmap](understand-k8s/configmap.md)
   * [Secrets](understand-k8s/secret.md)
+* [Application Lifecycle Management](app-mgmt/README.md)
+  * [Rolling Updates and Rollback](app-mgmt/rolling-updates-and-rollback.md)
 * [Refrences](refrences/refrences.md)
   * [Docker Static Site](docker/static-site.md)
   * [Docker First Image](docker/docker-first-image.md)
