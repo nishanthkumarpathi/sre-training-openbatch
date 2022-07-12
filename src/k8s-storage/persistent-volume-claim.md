@@ -1,6 +1,12 @@
 # Persistent Volume Claim
 
-If properties not matches or Persistent Volume is not available for the Persistent Volume Claim then it will display the pending state.
+In this section, we will take a look at Persistent Volume Claim
+
+Now we will create a Persistent Volume Claim to make the storage available to the node.
+
+Volumes and Persistent Volume Claim are two separate objects in the Kubernetes namespace.
+
+Once the Persistent Volume Claim created, Kubernetes binds the Persistent Volumes to claim based on the request and properties set on the volume.
 
 ### Persistent Volume
 
@@ -26,6 +32,7 @@ kubectl create -f pv-definition.yaml
 ```bash
 kubectl get pv
 ```
+If properties not matches or Persistent Volume is not available for the Persistent Volume Claim then it will display the pending state.
 
 ### Persistent Volume Claim
 
