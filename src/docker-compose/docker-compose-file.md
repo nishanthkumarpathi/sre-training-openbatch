@@ -4,15 +4,30 @@ In this lesson we will look at the basics of creating a compose file.
 
 Step 1: Setup your environment:
 
+```
+cd ~
+```
+
+```
 cd compose
-git clone https://github.com/linuxacademy/content-weather-app.git weather-app
-cd weather-app
-git checkout compose
+```
+
+```
+git clone https://github.com/nishanthkumarpathi/content-weather-app.git weather-app
+```
+
+```
+ cd weather-app
+```
+
+```
+ git checkout compose
+```
 
 Step 2: Create a docker-compose.yml file:
 
 ```bash
-vi docker-compose.yml
+touch docker-compose.yml
 ```
 
 docker-compose.yml contents:
@@ -43,13 +58,11 @@ List compose services:
 docker-compose ps
 ```
 
-
 Step 4: Verify the weather-app is working:
 
 ```bash
 curl http://localhost:8081
 ```
-
 
 Step 5: Rebuild the image:
 
@@ -62,5 +75,3 @@ Step 6: Rebuild the image with no cache:
 ```bash
 docker-compose build --no-cache
 ```
-
-

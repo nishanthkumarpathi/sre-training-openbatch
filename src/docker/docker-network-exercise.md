@@ -2,7 +2,7 @@
 
 In this lesson, we will dig deeper into container networking by supplying our own subnet and gateway when creating a new network. We will then move on to networking two different containers using an internal network. This will allow one container to be publicly accessible while the other one is not.
 
-## Creating a network and defining a Subnet and Gateway
+## 1. Creating a network and defining a Subnet and Gateway
 
 Step 1: Create a bridge network with a subnet and gateway:
 
@@ -28,7 +28,7 @@ Step 4: Prune all unused networks:
 docker network prune
 ```
 
-## Create a network with an IP range:
+## 2. Create a network with an IP range:
 
 ```bash
 docker network create --subnet 10.1.0.0/16 --gateway 10.1.0.1 \
@@ -47,8 +47,11 @@ Step 2: Create a container using the br04 network:
 docker container run --name network-test01 -it --network br04 centos /bin/bash
 ```
 
+You may not find any troubleshooting tools like ping, netstat, or any other tools inside the centos container. You will also not find yum.
 
-## Install Net Tools:
+try to google them and fix the issues. mainly if you cant access yum, please refer to google on how to add repo packages list to yum repo and then follow the below commands.
+
+### 2.1 Install Net Tools inside the Centos Container
 
 ```bash
 yum update -y
@@ -58,36 +61,31 @@ yum update -y
 yum install -y net-tools
 ```
 
-
-Get the IP info for the container:
+Step 2.1.2: Get the IP info for the container:
 
 ```bash
 ifconfig
 ```
 
-Get the gateway info the container:
+Step 2.1.3 Get the gateway info the container:
 
 ```bash
 netstat -rn
 ```
 
-Get the DNS info for the container:
+Step 2.1.4 Get the DNS info for the container:
 
 ```bash
 cat /etc/resolv.conf
 ```
 
 
-Assigning IPs to a container:
 
-
-Create a new container and assign an IP to it:
-
+## 3. Create a new container and assign an IP to it:
 
 ```bash
 docker container run -d --name network-test02 --ip 10.1.4.102 --network br04 nginx
 ```
-
 
 Get the IP info for the container:
 
@@ -95,8 +93,7 @@ Get the IP info for the container:
 docker container inspect network-test02 | grep IPAddr
 ```
 
-
-## Networking two containers
+## 4. Networking two containers
 
 Step 1: Create an internal network:
 
