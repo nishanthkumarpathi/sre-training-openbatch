@@ -53,6 +53,7 @@
   * [Persistent Volume Claim](k8s-storage/persistent-volume-claim.md)
   * [PVC in POD](k8s-storage/pvc-in-pod.md)
 * [Istio](istio/README.md)
+  * [Calico Networking](istio/calico-networking.md)
   * [Istio Setup Manual](istio/istio-setup-manual.md)
   * [Istio Observability](istio/istio-observability.md)
 * [Refrences](refrences/refrences.md)
