@@ -9,11 +9,13 @@ minikube start --network-plugin=cni --cni=calico
 ```
 
 ### Verify Calico installation
+
 You can verify Calico installation in your cluster by issuing the following command.
 
 ```bash
 watch kubectl get pods -l k8s-app=calico-node -A
 ```
+
 Use ctrl+c to break out of watch.
 
 Congratulations you now have a minikube cluster equipped with Calico
@@ -23,8 +25,19 @@ Congratulations you now have a minikube cluster equipped with Calico
 ```bash
 minikube node add
 ```
+
 Verify nodes using the following command
 
 ```bash
 minikube node list
 ```
+
+### Enable Metrics Server
+
+```bash
+minikube addons enable metrics-server
+```
+
+{% hint style="danger" %}
+**Ensure your Master Node is in Healthy State and all the necessary services and pods are working fine.**
+{% endhint %}
