@@ -55,6 +55,7 @@
   * [PVC in POD](k8s-storage/pvc-in-pod.md)
 * [Istio](istio/README.md)
   * [AKS Setup](istio/aks-setup.md)
+  * [Kubectl Setup in Windows](istio/kubectl-setup-windows.md)
   * [Istio Setup Manual](istio/istio-setup-manual.md)
   * [Istio Observability](istio/istio-observability.md)
 * [Refrences](refrences/refrences.md)
