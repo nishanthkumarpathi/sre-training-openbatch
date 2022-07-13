@@ -10,6 +10,10 @@ Step 2: Unzip the IstioCtl and then Place the isitoctl.exe file in your "c" driv
 
 ![](<../.gitbook/assets/image (4).png>)
 
+Step 3: On the Desktop, Create a folder to work on the lab files.
+
+![](<../.gitbook/assets/image (2).png>)
+
 ### Install Istio <a href="#install" id="install"></a>
 
 Step 1: For this installation, we use the `minimal`[configuration profile](https://istio.io/latest/docs/setup/additional-setup/config-profiles/). It’s selected to have a good set of defaults for testing, but there are other profiles for production or performance testing.
