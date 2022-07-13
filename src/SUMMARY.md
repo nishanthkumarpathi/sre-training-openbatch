@@ -57,6 +57,7 @@
   * [AKS Setup](istio/aks-setup.md)
   * [Kubectl Setup in Windows](istio/kubectl-setup-windows.md)
   * [Istio Setup Manual](istio/istio-setup-manual.md)
+  * [Istio Demo App](istio/istio-demo-app.md)
   * [Istio Observability](istio/istio-observability.md)
 * [Refrences](refrences/refrences.md)
   * [Docker Static Site](docker/static-site.md)
