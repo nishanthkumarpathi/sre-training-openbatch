@@ -27,3 +27,7 @@ Step 2: Add a namespace label to instruct Istio to automatically inject Envoy si
 ```bash
 kubectl label namespace default istio-injection=enabled
 ```
+
+```
+istioctl analyze
+```
