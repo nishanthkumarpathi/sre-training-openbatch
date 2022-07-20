@@ -12,7 +12,7 @@ Step 2: Unzip the IstioCtl and then Place the isitoctl.exe file in your "c" driv
 
 Step 3: On the Desktop, Create a folder to work on the lab files.
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (2) (1).png>)
 
 ### Install Istio <a href="#install" id="install"></a>
 

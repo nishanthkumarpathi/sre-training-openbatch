@@ -59,7 +59,7 @@ Since the .kube directory is created, we now need to create the kubeconfig file 
 
 ![Copying over the kubeconfig file from your kubernetes cluster](../.gitbook/assets/image.png)
 
-![After copying the admin.conf file to config under the kube directory in the user profile](<../.gitbook/assets/image (2) (1).png>)
+![After copying the admin.conf file to config under the kube directory in the user profile](<../.gitbook/assets/image (2) (1) (1).png>)
 
 ### 6. Change the API version listed in the kubeconfig file <a href="#h-6-change-the-api-version-listed-in-the-kubeconfig-file" id="h-6-change-the-api-version-listed-in-the-kubeconfig-file"></a>
 
